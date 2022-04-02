@@ -1,0 +1,14 @@
+Date: 29/3/2022
+Time: 17:4
+Phone Number: +65 ********
+Message: SENDING MESSAGES USING PYWHATKIT
+--------------------
+Date: 29/3/2022
+Time: 17:13
+Phone Number: +65 ********
+Message: SENDING MESSAGES USING PYWHATKIT
+--------------------
+
+
+
+can also add a -- recieved = false or true at the bottom of loop to rerun or not

@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!-- <meta http-equiv="refresh" content="5"> -->
+
+<head>
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <title>OSpace Control Centre</title>
+
+    <!-- Below line is a one time thing -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+
+    <script type=text/javascript> $(function() { $("#Angmokio").click(function (event) { $.getJSON('/Angmokio', { },
+    function(data) { }); return false; }); }); </script>
+    
+    <script type=text/javascript> $(function() { $("#AngmokioDoor").click(function (event) { $.getJSON('/AngmokioDoor', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#Tampines").click(function (event) { $.getJSON('/Tampines', { },
+    function(data) { }); return false; }); }); </script>
+    
+    <script type=text/javascript> $(function() { $("#TampinesDoor").click(function (event) { $.getJSON('/TampinesDoor', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#Bedoknorth").click(function (event) { $.getJSON('/Bedoknorth', { },
+    function(data) { }); return false; }); }); </script>
+    
+    <script type=text/javascript> $(function() { $("#BedoknorthDoor").click(function (event) { $.getJSON('/BedoknorthDoor', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#Tanglinhalt").click(function (event) { $.getJSON('/Tanglinhalt', { },
+    function(data) { }); return false; }); }); </script>
+    
+    <script type=text/javascript> $(function() { $("#TanglinhaltDoor").click(function (event) { $.getJSON('/TanglinhaltDoor', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#Disconnect").click(function (event) { $.getJSON('/Disconnect', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#getnodelistB").click(function (event) { $.getJSON('/getNodeListFunction', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onTV1").click(function (event) { $.getJSON('/onTV1Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offTV1").click(function (event) { $.getJSON('/offTV1Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onTV2").click(function (event) { $.getJSON('/onTV2Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offTV2").click(function (event) { $.getJSON('/offTV2Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onTV3").click(function (event) { $.getJSON('/onTV3Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offTV3").click(function (event) { $.getJSON('/offTV3Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onAC1").click(function (event) { $.getJSON('/onAC1Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offAC1").click(function (event) { $.getJSON('/offAC1Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onAC2").click(function (event) { $.getJSON('/onAC2Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offAC2").click(function (event) { $.getJSON('/offAC2Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onDE1").click(function (event) { $.getJSON('/onDE1Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offDE1").click(function (event) { $.getJSON('/offDE1Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onDE2").click(function (event) { $.getJSON('/onDE2Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offDE2").click(function (event) { $.getJSON('/offDE2Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onLT11").click(function (event) { $.getJSON('/onLT11Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offLT11").click(function (event) { $.getJSON('/offLT11Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onLT12").click(function (event) { $.getJSON('/onLT12Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offLT12").click(function (event) { $.getJSON('/offLT12Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onLT21").click(function (event) { $.getJSON('/onLT21Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offLT21").click(function (event) { $.getJSON('/offLT21Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onLT22").click(function (event) { $.getJSON('/onLT22Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#offLT22").click(function (event) { $.getJSON('/offLT22Function', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#onnDR1").click(function (event) { $.getJSON('/onnDR1', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#resetWebsite").click(function (event) { $.getJSON('/resetWebsite', { },
+    function(data) { }); return false; }); }); </script>
+
+    <script type=text/javascript> $(function() { $("#getCurrentStatus").click(function (event) { $.getJSON('/getCurrentStatus', { },
+    function(data) { }); return false; }); }); </script>
+
+    <meta charset=utf-8>
+</head>
+
+<body ng-app="">
+    <h1 style="text-align: center;">OSpace Control Centre</h1>
+    <div ng-if={{disconnected}} style="margin-left: 20%; margin-right: 20%; border-style: double;">
+        <h2 style="text-align: center;">Choose a server to connect</h2>
+        <div style="padding-left: 5%;">
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="Angmokio" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Ang Mo Kio</button>
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="AngmokioDoor" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Ang Mo Kio Door</button>
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="Tampines" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Tampines</button>
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="TampinesDoor" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Tampines Door</button>
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="Bedoknorth" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Bedok North</button>
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="BedoknorthDoor" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Bedok North Door</button>
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="Tanglinhalt" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Tanglin Halt</button>
+            <button style="margin-right: 5%; margin-bottom: 2%;" id="TanglinhaltDoor" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Tanglin Halt Door</button>
+        </div>
+    </div><br><br>
+    <div ng-if={{connected}}>
+        <h2 style="text-align: center;"> Currently connected to : {{location}}</h2>
+        <h4 style="text-align: center;"> {{locationDetail}}</h4>
+        <div style="margin-left: 47%; margin-bottom: 3%;">
+            <button id="Disconnect" onclick="window.setTimeout(function () {  window.location.reload();}, 5000)"> Disconnect </button>
+        </div>
+    </div>
+    <br>
+    <div ng-if={{isGateway}}>
+        <div>
+            <button style="margin-left: 45%; margin-bottom: 10px;" id="getnodelistB"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Click to Get Node
+                Lists</button>
+
+            <!-- <button style="margin-left: 45%; margin-bottom: 10px;" id="getCurrentStatus"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 5000)">Click to Current Status</button> -->
+        </div>
+    </div>
+    <br>
+    <div ng-if={{isGateway}}>
+        <div style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+
+            <div ng-if={{TVact1}}>
+                <p style="text-align: center;">TV Plug1 Node ID : [ {{TVpl1}} ]</p>
+            </div>
+            <div ng-if={{TVact2}}>
+                <p style="text-align: center;">TV Plug2 Node ID : [ {{TVpl2}} ]</p>
+            </div>
+            <div ng-if={{TVact3}}>
+                <p style="text-align: center;">TV Plug3 Node ID : [ {{TVpl3}} ]</p>
+            </div>
+            <div ng-if={{ACact1}}>
+                <p style="text-align: center;">Aircon1 On/Off Node ID : [ {{AC1}} ]</p>
+            </div>
+            <div ng-if={{ACact2}}>
+                <p style="text-align: center;"> Aircon2 On/Off Node ID : [ {{AC2}} ]</p>
+            </div>
+            <div ng-if={{DEact1}}>
+                <p style="text-align: center;">Dehumidifier Plug1 Node ID : [ {{DEpl1}} ]</p>
+            </div>
+            <div ng-if={{DEact2}}>
+                <p style="text-align: center;">Dehumidifier Plug2 Node ID : [ {{DEpl2}} ]</p>
+            </div>
+            <div ng-if={{LTAct11}}>
+                <p style="text-align: center;"> Light1 Node ID : [ {{LT1}} ]</p>
+            </div>
+            <div ng-if={{LTAct21}}>
+                <p style="text-align: center;"> Light2 Node ID : [ {{LT2}} ]</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div ng-if={{isGateway}}>
+        <div ng-if={{TVact1}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">TV1 Plug DETECTED</h2>
+            <h3 style="text-align: center;">Plug status : {{TVsta1}}</h3>
+            <button style="margin-left: 31%;" id="onTV1"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to on </button>
+            <button style="margin-left: 14%; margin-bottom: 20px;" id="offTV1"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to off </button>
+
+        </div><br>
+        <div ng-if={{TVact2}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">TV2 Plug DETECTED</h2>
+            <h3 style="text-align: center;">Plug status : {{TVsta2}}</h3>
+            <button style="margin-left: 31%; margin-bottom: 10px;" id="onTV2"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to on </button>
+            <button style="margin-left: 14%; margin-bottom: 20px;" id="offTV2"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to off </button>
+
+        </div><br>
+        <div ng-if={{TVact3}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">TV3 Plug DETECTED</h2>
+            <h3 style="text-align: center;">Plug status : {{TVsta3}}</h3>
+            <button style="margin-left: 31%; margin-bottom: 10px;" id="onTV3"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to on </button>
+            <button style="margin-left: 14%; margin-bottom: 20px;" id="offTV3"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to off </button>
+
+
+        </div><br>
+
+        <div ng-if={{ACact1}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">Aircon1 DETECTED</h2>
+            <h3 style="text-align: center;">Aircon status : {{ACsta1}}</h3>
+            <button style="margin-left: 31%; margin-bottom: 10px;" id="onAC1"
+            onclick="window.setTimeout(function () {  window.location.reload();}, 10000)">Click Here SET on </button>
+            <button style="margin-left: 12%; margin-bottom: 20px;" id="offAC1"
+            onclick="window.setTimeout(function () {  window.location.reload();}, 10000)">Click Here SET off </button>
+
+
+        </div><br>
+        <div ng-if={{ACact2}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">Aircon2 DETECTED</h2>
+            <h3 style="text-align: center;">Aircon status : {{ACsta1}}</h3>
+            <button style="margin-left: 31%; margin-bottom: 10px;" id="onAC2"
+            onclick="window.setTimeout(function () {  window.location.reload();}, 10000)">Click Here SET on </button>
+            <button style="margin-left: 12%; margin-bottom: 20px;" id="offAC2" 
+            onclick="window.setTimeout(function () {  window.location.reload();}, 10000)">Click Here SET off </button>
+
+        </div><br>
+        <div ng-if={{DEact1}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">Dehumidifier1 Plug DETECTED</h2>
+            <h3 style="text-align: center;">Plug status : {{DEsta1}}</h3>
+            <button style="margin-left: 31%; margin-bottom: 10px;" id="onDE1"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to on </button>
+            <button style="margin-left: 14%; margin-bottom: 20px;" id="offDE1"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to off </button>
+
+
+        </div><br>
+        <div ng-if={{DEact2}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">Dehumidifier2 Plug DETECTED</h2>
+            <h3 style="text-align: center;">Plug status : {{DEsta2}}</h3>
+            <button style="margin-left: 31%; margin-bottom: 10px;" id="onDE2"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to on </button>
+            <button style="margin-left: 14%; margin-bottom: 20px;" id="offDE2"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 4000)">Click Here to off </button>
+
+
+        </div><br>
+
+        <div ng-if={{LTAct11}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">Light1 DETECTED</h2>
+            <div ng-if={{LTAct11}}>
+                <h3 style="text-align: center;">Internal Light 1-1</h3>
+                <h4 style="text-align: center;"> Currently : {{LTSta11}}</h4>
+                <button style="margin-left: 31%;" id="onLT11" 
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to on </button>
+                <button style="margin-left: 14%; margin-bottom: 20px;" id="offLT11"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to off </button>
+
+                
+
+            </div>
+            <div ng-if={{LTAct12}}>
+                <h3 style="text-align: center;">External Light 1-2</h3>
+                <h4 style="text-align: center;"> Currently : {{LTSta12}}</h4>
+                <button style="margin-left: 31%;" id="onLT12"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to on </button>
+                <button style="margin-left: 14%; margin-bottom: 20px;" id="offLT12"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to off </button>
+                
+                
+
+            </div>
+            <br>
+        </div><br>
+
+        <div ng-if={{LTAct21}} style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;">
+            <h2 style="text-align: center;">Light2 DETECTED</h2>
+            <div ng-if={{LTAct21}}>
+                <h3 style="text-align: center;">Internal Light 2-1</h3>
+                <h4 style="text-align: center;"> Currently : {{LTSta21}}</h4>
+                <button style="margin-left: 31%;" id="onLT21"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to on </button>
+                <button style="margin-left: 14%; margin-bottom: 20px;" id="offLT21"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to off </button>
+                
+               
+
+            </div>
+            <div ng-if={{LTAct22}}>
+                <h3 style="text-align: center;">External Light 2-2</h3>
+                <h4 style="text-align: center;"> Currently : {{LTSta22}}</h4>
+                <button style="margin-left: 31%;" id="onLT22"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to on </button>
+                <button style="margin-left: 14%; margin-bottom: 20px;" id="offLT22"
+                onclick="window.setTimeout(function () {  window.location.reload();}, 9000)">Click Here to off </button>
+                
+               
+
+            </div>
+            <br>
+        </div><br>
+
+
+       
+
+    </div>
+
+    <div ng-if={{isDoor}}>
+        <div style="border-style: dotted; margin-right: 20%; margin-left: 20%; border-radius: 5%;"><br>
+            
+
+           
+
+
+            <h2 style="text-align: center;">Door Switch</h2><br>
+            <button style="margin-left: 44%; margin-bottom: 10px;" id="onnDR1">Click to open Door</button>
+
+        </div><br>
+    </div>
+
+
+
+    <br><br><br>
+
+    <!-- <button style="margin-left: 47%; margin-bottom: 20px;" id="resetWebsite"
+    onclick="window.setTimeout(function () {  window.location.reload();}, 3000)">Reset Website</button> -->
+
+
+
+
+</body>
+
+</html>
